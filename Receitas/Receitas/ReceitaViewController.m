@@ -81,6 +81,11 @@
     swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
     [self.view addGestureRecognizer:swipeRight];
     [self update];
+    
+    NSFileManager *fileManager = [[NSFileManager alloc] init ];
+    NSArray *urls = [fileManager URLsForDirectory:
+         NSDocumentDirectory inDomains:NSUserDomainMask]; for(int i = 0; i < [urls count]; i++ ) {
+        NSLog(@"%@", urls[0]); }
 
 }
 
