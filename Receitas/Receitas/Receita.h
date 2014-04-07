@@ -10,5 +10,10 @@
 
 @interface Receita : NSObject
 // TODO Definir os atributos da receita e permitir que ela seja armazenada em arquivo.
+//array de ingredientes
+//classe ingredientes
+//nome
+//modo de preparo
+
 
 @end
